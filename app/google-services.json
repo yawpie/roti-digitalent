@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "852817286890",
+    "project_id": "roti-digitalent",
+    "storage_bucket": "roti-digitalent.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852817286890:android:4a510b2c01aeacc1b56993",
+        "android_client_info": {
+          "package_name": "com.yawpie.rotidigitalent"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCar0UWn_vUpYzdg47eotYdahskbMr1krE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

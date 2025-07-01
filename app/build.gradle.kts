@@ -1,17 +1,25 @@
 plugins {
+//    alias(libs.plugins.android.application)
+//    alias(libs.plugins.kotlin.android)
+//
+//    id("com.google.dagger.hilt.android")
+
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
 
+    // Apply the kapt plugin here
+//    id 'kotlin-kapt'
     kotlin("kapt")
     id("com.google.dagger.hilt.android")
+    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "com.fintrack.rotidigitalent"
+    namespace = "com.yawpie.rotidigitalent"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.fintrack.rotidigitalent"
+        applicationId = "com.yawpie.rotidigitalent"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -54,6 +62,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.firebase.storage)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -95,6 +104,10 @@ dependencies {
 
     implementation("com.google.android.gms:play-services-auth:21.0.0")
     implementation("io.coil-kt:coil:2.4.0") // or latest version
+    implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
+
+    // Dependency untuk Firebase Storage
+//    implementation("com.google.firebase:firebase-storage-ktx")
 //    implementation("io.coil-kt:coil-transformations:2.4.0")
 
 //    implementation(libs.androidx.core.ktx)
